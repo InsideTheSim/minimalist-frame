@@ -4,8 +4,10 @@ const b = `<html lang="en">
   <meta property="fc:frame" content="vNext" />
   <meta
     property="fc:frame:image"
-    content="https://minimalist-frame.vercel.app//img/b.png"
+    content="https://minimalist-frame.vercel.app/img/b.png"
   />
+  <meta property="og:image" content="https://minimalist-frame.vercel.app/img/b.png" />
+  <meta property="fc:frame:image:aspect_ratio" content"1:1" />
 </head>
 <body>
   <h1>Minimalist Frame - B</h1>
@@ -20,6 +22,8 @@ const c = `<html lang="en">
     property="fc:frame:image"
     content="https://minimalist-frame.vercel.app/img/c.png"
   />
+  <meta property="og:image" content="https://minimalist-frame.vercel.app/img/c.png" />
+  <meta property="fc:frame:image:aspect_ratio" content"1:1" />
 </head>
 <body>
   <h1>Minimalist Frame - C</h1>
