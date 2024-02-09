@@ -29,7 +29,8 @@ const c = `<html lang="en">
 
 export default function handler(req, res) {
   if (req.method === "POST") {
-    const data = JSON.parse(req.untrustedData)
+    console.log(req.untrustedData)
+    const data = req.untrustedData
     if (!data) {
       res.statusCode = 400
       return res.send("Invalid request")
