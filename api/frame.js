@@ -28,7 +28,7 @@ const c = `<html lang="en">
 `
 
 export default function handler(req, res) {
-  console.log(req.body)
+  console.log(req.body, req.m, req)
   if (req.method === "POST") {
     res.statusCode = 200
     return res.send("got it", req.body)
