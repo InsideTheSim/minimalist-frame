@@ -30,7 +30,8 @@ const c = `<html lang="en">
 export default function handler(req, res) {
   console.log(req)
   if (req.method === "POST") {
-    res.end("got it", req.body)
+    res.statusCode = 200
+    return res.send("got it", req.body)
     // if (req.url === "/b.html") {
     //   res.statusCode = 200
     //   res.setHeader("Content-Type", "text/html")
