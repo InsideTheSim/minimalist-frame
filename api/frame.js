@@ -32,15 +32,15 @@ export default function handler(req, res) {
     const data = JSON.parse(req.untrustedData)
     if (!data) {
       res.statusCode = 400
-      res.end("Invalid request")
+      return res.send("Invalid request")
     }
     res.statusCode = 200
     res.setHeader("Content-Type", "text/html")
     if (data.buttonIndex === 1) {
-      res.end(b)
+      return res.send(b)
     }
     if (data.buttonIndex === 2) {
-      res.end(c)
+      return res.send(c)
     }
   }
   return res.status(400).end()
