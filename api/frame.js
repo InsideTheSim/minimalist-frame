@@ -29,7 +29,6 @@ const c = `<html lang="en">
 
 export default function handler(req, res) {
   if (req.method === "POST") {
-    console.log(req.body.untrustedData)
     const data = req.body.untrustedData
     if (!data) {
       res.statusCode = 400
