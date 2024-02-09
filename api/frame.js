@@ -28,21 +28,20 @@ const c = `<html lang="en">
 `
 
 export default function handler(req, res) {
-  console.log(req.body, req.m, req.data)
   if (req.method === "POST") {
+    const data = JSON.parse(req.untrustedData)
+    if (!data) {
+      res.statusCode = 400
+      res.end("Invalid request")
+    }
     res.statusCode = 200
-    return res.send("got it", req.body)
-    // if (req.url === "/b.html") {
-    //   res.statusCode = 200
-    //   res.setHeader("Content-Type", "text/html")
-    //   res.end(b)
-    //   return
-    // }
-    // if (req.url === "/c.html") {
-    //   res.statusCode = 200
-    //   res.setHeader("Content-Type", "text/html")
-    //   res.end(c)
-    //   return
-    // }
+    res.setHeader("Content-Type", "text/html")
+    if (data.buttonIndex === 1) {
+      res.end(b)
+    }
+    if (data.buttonIndex === 2) {
+      res.end(c)
+    }
   }
+  return res.status(400).end()
 }
