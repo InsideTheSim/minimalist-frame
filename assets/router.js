@@ -1,5 +1,5 @@
-export default function createRouter(req, res, target1, target2) {
-  return function () {
+export default function createRouter(target1, target2) {
+  return function (req, res) {
     if (req.method === "POST") {
       const data = req.body.untrustedData
       if (!data) {
