@@ -4,7 +4,7 @@ export const a = `<html lang="en">
   <meta property="fc:frame" content="vNext" />
   <meta
     property="fc:frame:image"
-    content="https://minimalist-frame.vercel.app/img/a.png"
+    content="https://minimalist-frame.vercel.app/img/a.gif"
   />
   <meta
     property="og:image"
@@ -35,7 +35,7 @@ export const b = `<html lang="en">
   <meta property="fc:frame" content="vNext" />
   <meta
     property="fc:frame:image"
-    content="https://minimalist-frame.vercel.app/img/b.png"
+    content="https://minimalist-frame.vercel.app/img/b.gif"
   />
   <meta property="og:image" content="https://minimalist-frame.vercel.app/img/b.png" />
   <meta property="fc:frame:image:aspect_ratio" content="1:1" />
@@ -63,7 +63,7 @@ export const c = `<html lang="en">
   <meta property="fc:frame" content="vNext" />
   <meta
     property="fc:frame:image"
-    content="https://minimalist-frame.vercel.app/img/c.png"
+    content="https://minimalist-frame.vercel.app/img/c.gif"
   />
   <meta property="og:image" content="https://minimalist-frame.vercel.app/img/c.png" />
   <meta property="fc:frame:image:aspect_ratio" content="1:1" />
